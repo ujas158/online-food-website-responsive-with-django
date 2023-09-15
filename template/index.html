@@ -1,0 +1,129 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>FryFenchie.com</title> 
+        <meta charset="UTF-8">
+        {% load static %}
+        <link rel="stylesheet" href="{% static '/css/style.css' %}">
+        <link rel="stylesheet" media="screen and (min-width: 650px) and (max-width: 1080px)" href="{% static '/css/phone2.css' %}">
+        <link rel="stylesheet" media="screen and (max-width: 650px)" href="{% static '/css/phone.css' %}">
+        <link rel="shortcut icon" href="/static/images/favicon.png" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+        <nav id="navbar">
+            <!-- left box for logo -->
+            <div class="left">
+                <img src="/static/images/logo.png" alt="FryFenchie.com">
+                <!-- <div>FryFenchie</div> -->
+            </div>
+            <!-- centre for nav bar -->
+            <div>
+                <ul class="nav" class="active">
+                    <li><a href"/">Home</li></a>
+                    <li><a href"#">Menu</li></a>
+                    <li><a href"#">Categories</li></a>
+                    <li><a href"#">About Us</li></a>
+                    <li><a href"#">Contact Us</li></a>
+                </ul>
+            </div>
+            </div>
+        </nav>
+    </header>
+    <section id="home">
+        <h1 class="primary">Welcome to FryFenchie</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem recusandae nam inventore cupiditate iure </p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. </p>
+        <button class="btn">Order Now</button>
+    </section>
+    <section id="services">
+        <h1 class="primary">Our Services</h1>
+        <div class="container">
+            <div class="box">
+                <img src="static/images/food3.jpeg" alt="order food">
+                <h2 class="secondary">Food Ordering</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores dolorem, voluptatum incidunt
+                </p>
+            </div>
+            <!-- <div class="container"> -->
+            <div class="box">
+                <img src="static/images/food4.jpg" alt="order food">
+                <h2 class="secondary">Food Catering</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores dolorem, voluptatum incidunt
+                </p>
+            </div>
+            <!-- <div class="container"> -->
+            <div class="box">
+                <img src="static/images/food5.jpeg" alt="order food">
+                <h2 class="secondary">Food Delivary</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores dolorem, voluptatum incidunt
+                </p>
+            </div>
+        </div>
+
+    </section>
+    <section id="client">
+        <h1 class="primary">Our Clients</h1>
+        <div class="clients">
+            <div class="client">
+                <img src="static/images/logo.png" alt="">
+            </div>
+            <div class="client">
+                <img src="static/images/logo.png" alt="">
+            </div>
+            <div class="client">
+                <img src="static/images/logo.png" alt="">
+            </div>
+            <div class="client">
+                <img src="static/images/logo.png" alt="">
+            </div>
+            <div class="client">
+                <img src="static/images/logo.png" alt="">
+            </div>
+            <div class="client">
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <h1 class="primary"> Contact Us</h1>
+        <div class="contactus">
+            <form action="">
+                <div class="form">
+                    <label for="Name">Name : </label>
+                    <input type="text" name="Name" id="Name" placeholder="Enter Your Name : " autocomplete="off">
+                </div>
+                <div class="form">
+                    <label for="Phone">Phone No. : </label>
+                    <input type="text" name="Phone" id="Phone" placeholder="Enter Your Phone No. : " autocomplete="off">
+                </div>
+                <div class="form">
+                    <label for="Email">Email : </label>
+                    <input type="text" name="Email" id="Email" placeholder="Enter Your Email : " autocomplete="off">
+                </div>
+                <div class="form">
+                    <label for="Address">Address : </label>
+                    <input type="text" name="Address" id="Address" placeholder="Enter Your Address : "
+                        autocomplete="off">
+                </div>
+                <div class="form">
+                    <label for="Message">Message :</label>
+                    <!-- <input type="text" name="Name" id="Name" placeholder="Enter Your Name : "> -->
+                    <textarea name="Message" id="Message" cols="20" rows="4" autocomplete="off"></textarea>
+                </div>
+            </form>
+            <button onclick="alert('Thank You For contacting us')">Submit</button>
+        </div>
+    </section>
+    <footer>
+        <div>
+            copyright &copy; www.fryfenchie.com. All rights reserved.
+        </div>
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,117 @@
+/* header */
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+#navbar {
+    flex-direction: column;
+}
+
+#navbar ul li a {
+    font-size: 0.55rem;
+    padding: 0px 7px;
+}
+
+/* height: 500px;
+padding: 0px 20px 0px 5px; */
+/* home */
+#home {
+    height: 360px;
+    padding: 0px 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#home::before {
+    height: 410px;
+    content: "";
+    position: absolute;
+    background-color: rgb(241, 194, 113);
+    background: url("/static/images/food2.jpg");
+    z-index: -2;
+    width: 100%;
+    opacity: 0.30;
+    top: 0px;
+    left: 0px;
+}
+
+/* services */
+
+#services .container {
+    flex-direction: column;
+}
+
+#services p {
+    font-size: 0.7rem;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#service .primary {
+    font-size: 1.5rem;
+    padding: 15px 0px 15px 0px;
+}
+
+#services .box {
+    border: 2px solid black;
+    margin: 5px 30px;
+    padding: 10px 10px;
+    border-radius: 14px;
+    background-color: rgba(241, 194, 113, 0.45);
+}
+
+#services .box img {
+    display: block;
+    margin: auto;
+    height: 80px;
+    width: 80px;
+    border-radius: 20px;
+}
+
+/* client */
+
+.clients {
+    display: flex;
+    overflow-x: auto;
+    }
+
+#client {
+    position: relative;
+    height: 135px;
+    margin-top: 25px;
+
+}
+
+#client::before {
+    content: "";
+    position: absolute;
+    z-index: -2;
+    opacity: 0.5;
+    height: 100%;
+    width: 100%;
+    background: url('/static/images/food2.jpg');
+}
+
+.clients img {
+    height: 60px;
+    padding: 5px;
+    margin: 5px;
+}
+
+/* contactus */
+
+/* footer */
+.primary {
+    font-size: 1.5rem;
+    padding: 15px 0px 15px 0px;
+}
+
+.secondary {
+    font-size: 1rem;
+    padding: 20px 0px 5px 0px;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
